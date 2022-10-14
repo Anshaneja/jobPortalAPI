@@ -74,8 +74,9 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+const PORT = process.env.PORT || 5000;
 // starting the server
-app.listen(3001, () => {
-  console.log('listening on port 3001');
+app.listen(PORT, () => {
+  console.log('listening');
 });
 
